@@ -1,0 +1,22 @@
+.line-transparent {
+    background: black;
+    width: 100%;
+  }
+  
+  .line-light {
+    height: 50px;
+    width: 20%;
+    background: #EE9CA7;
+  }
+  
+  .line-medium {
+    height: 150px;
+    width: 30%;
+    background: #C86472;
+  }
+  
+  .line-hard {
+    height: 200px;
+    width: 50%;
+    background: #9F3442;
+  }
