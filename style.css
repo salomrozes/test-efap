@@ -1,22 +1,223 @@
-.line-transparent {
-    background: black;
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  
+  body {
+    font-family: 'Work Sans', sans-serif;
+    background: #fff;
+    color: #222;
+    line-height: 1.5;
+    font-size: 16px;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  header {
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    z-index: 100;
+  }
+  
+  header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
   }
   
-  .line-light {
-    height: 50px;
-    width: 20%;
-    background: #EE9CA7;
+  .logo {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 1.6rem;
+    letter-spacing: 0.1em;
+    color: #111;
   }
   
-  .line-medium {
-    height: 150px;
-    width: 30%;
-    background: #C86472;
+  nav a {
+    color: #111;
+    text-decoration: none;
+    margin-left: 25px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    letter-spacing: 0.08em;
   }
   
-  .line-hard {
-    height: 200px;
+  nav a:hover {
+    color: #666;
+  }
+  
+  body > img:first-of-type {
+      margin-top: 100px;
+      display: block;
+      width: 63%;
+      height: auto;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  
+  .hero {
+    max-width: 900px;
+    margin: 40px auto 60px auto;
+    padding: 0 20px;
+  }
+  
+  .hero-content h1 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 2.2rem;
+    text-align: left;
+    margin-bottom: 30px;
+    color: #111;
+    line-height: 1.2;
+  }
+  
+  .hero .image {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin-top: 50px;
+  }
+  
+  .hero .image img {
+    height: 600px;
+    width: auto;
+    object-fit: cover;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    }
+  
+  main.container {
+    max-width: 900px;
+    margin: 0 auto 80px auto;
+    padding: 0 20px;
+  }
+  
+  .content-section {
+    margin-bottom: 50px;
+  }
+  
+  .content-section h2 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 1.8rem;
+    border-bottom: 3px solid #111;
+    padding-bottom: 6px;
+    margin-bottom: 15px;
+    text-align: left;
+    letter-spacing: 0.05em;
+    color: #111;
+    border: none;
+    border-bottom: none;
+    text-decoration: none;
+  }
+  
+  .content-section p {
+    font-size: 1.1rem;
+    color: #444;
+    max-width: 700px;
+    line-height: 1.4;
+    text-align: left;
+  }
+  
+  .images {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; 
+    gap: 5px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  
+  .images img {
     width: 50%;
-    background: #9F3442;
+    height: 3000px
+    object-fit: contain;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  footer {
+    background: #ffffff;
+    padding: 25px 20px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #666;
+    letter-spacing: 0.1em;
+    border-top: 1px solid #ddd;
+    margin-top: 40px;
+  }
+  
+  .bottom-section .separator {
+    width: 100%;
+    max-width: 3500px;    
+    height: 1px;            
+    background-color: #000000; 
+    margin: 0 auto 60px;     
+  }
+  
+  .bottom-section {
+    background-color: #fff;      
+    padding: 100px 20px;          
+    text-align: center;
+  }
+  
+  .bottom-section .logo-large {
+    font-family: 'Playfair Display', serif;
+    font-size: 10rem;             
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    color: #111;                
+    margin-bottom: 80px;        
+    text-transform: uppercase;
+  }
+  
+  .boxes-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;      
+    flex-wrap: wrap;             
+    gap: 30px;                   
+    max-width: 1080px;              
+    margin: 0 auto;
+  }
+  
+  .box {
+    background-color: #fff;      
+    border: 1px solid #fff;     
+    width: 240px;                   
+    height: 240px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
+  }
+  
+  .box h3 {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    color: #111;
+    margin: 0;
+    text-transform: uppercase;
+  }
+  
+  .box:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
   }
