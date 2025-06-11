@@ -1,4 +1,3 @@
-
 * {
   margin: 0;
   padding: 0;
@@ -213,4 +212,15 @@ footer {
 .box:hover {
   transform: translateY(-8px);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+.logo-insta-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.logo-insta {
+  width: 30px; 
+  height: auto;
 }
